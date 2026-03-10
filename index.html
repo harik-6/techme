@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Hariprasad | Senior Software Engineer — Intuit · Visa · Full Stack · WebSocket</title>
+  <meta name="description" content="Portfolio of Hariprasad, Senior Software Engineer at Intuit with 7+ years of experience building real-time WebSocket platforms, full-stack products, and mobile apps. Previously at Visa Inc. Co-founder of Streamwell. Awarded a Trade Secret for a JSON compression algorithm." />
+  <meta name="keywords" content="Hariprasad, Hariprasad Intuit, Hariprasad Visa, Senior Software Engineer, full stack developer, WebSocket engineer, real-time systems, React developer, Node.js developer, Java engineer, Spring Boot, Flutter developer, Streamwell, Finance Genie, F1 strategy game, JSON compression algorithm, trade secret, open source, node-googlesheets-orm, hpk06, harik-6" />
+  <meta name="author" content="Hariprasad" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph (LinkedIn, Facebook, Slack previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Hariprasad | Senior Software Engineer — Intuit · Visa · Full Stack · WebSocket" />
+  <meta property="og:description" content="Senior Software Engineer at Intuit. 7+ years in WebSocket platforms, real-time systems, React, Node.js, Java, Spring Boot, and Flutter. Co-founder of Streamwell. Visa Trade Secret awardee." />
+  <meta property="og:image" content="code.jpg" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hariprasad | Senior Software Engineer — Intuit · Visa · Full Stack" />
+  <meta name="twitter:description" content="Senior Software Engineer at Intuit. Real-time systems, WebSocket platforms, full-stack development. Co-founder of Streamwell. Visa Trade Secret awardee." />
+  <meta name="twitter:image" content="code.jpg" />
+
+  <!-- Structured Data: Person schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hariprasad",
+    "jobTitle": "Senior Software Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Intuit Inc."
+    },
+    "description": "Senior Software Engineer with 7+ years of experience in WebSocket platforms, real-time systems, full-stack development, and mobile apps. Co-founder of Streamwell. Awarded a Trade Secret at Visa Inc. for a JSON-specific compression algorithm.",
+    "url": "https://www.linkedin.com/in/hpk06/",
+    "sameAs": [
+      "https://www.linkedin.com/in/hpk06/",
+      "https://github.com/harik-6",
+      "https://medium.com/@hari_k6"
+    ],
+    "knowsAbout": [
+      "WebSocket", "Real-time Systems", "React", "Node.js", "Java", "Spring Boot", "Flutter",
+      "Full Stack Development", "Mobile App Development", "API Design", "Data Compression",
+      "Agentic AI", "Pub/Sub Systems", "RTMP", "HLS Streaming"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Anna University, CEG"
+    }
+  }
+  </script>
+
+  <link rel="icon" type="image/jpeg" href="code.jpg" />
+  <link rel="apple-touch-icon" href="code.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-gradient"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#trade-secret" class="nav-link">Trade Secret</a></li>
+        <li><a href="#tech-blog" class="nav-link">Tech Blog</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀️</span>
+          <span class="theme-icon moon">🌙</span>
+        </button>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#hero" class="mobile-nav-link">About</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#trade-secret" class="mobile-nav-link">Trade Secret</a></li>
+      <li><a href="#tech-blog" class="mobile-nav-link">Tech Blog</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title reveal">
+        Hi, I'm <span class="gradient-text">Hariprasad</span><br />
+      </h1>
+      <p class="hero-description reveal">
+        Senior engineer specialising in real-time systems and full-stack products.
+        Co-founded Streamwell, holds a Visa Trade Secret, and builds things used by thousands.
+      </p>
+      <div class="hero-social reveal">
+        <a href="https://www.linkedin.com/in/hpk06/" target="_blank" rel="noopener" class="hero-social-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/harik-6" target="_blank" rel="noopener" class="hero-social-btn" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="avatar-container">
+        <div class="avatar-ring ring-1"></div>
+        <div class="avatar-ring ring-2"></div>
+        <div class="avatar-ring ring-3"></div>
+        <div class="avatar-placeholder">
+          <img src="code.jpg" alt="Hariprasad" />
+        </div>
+        <div class="floating-cards-row">
+          <div class="floating-card card-1">
+            <span class="card-icon">⚛️</span>
+            <span>React</span>
+          </div>
+          <div class="floating-card card-2">
+            <span class="card-icon">🟢</span>
+            <span>Node.js</span>
+          </div>
+          <div class="floating-card card-3">
+            <span class="card-icon">☕</span>
+            <span>Java</span>
+          </div>
+          <div class="floating-card card-4">
+            <span class="card-icon">🍃</span>
+            <span>Spring Boot</span>
+          </div>
+          <div class="floating-card card-5">
+            <span class="card-icon">💙</span>
+            <span>Flutter</span>
+          </div>
+          <div class="floating-card card-6">
+            <span class="card-icon">🌐</span>
+            <span>Open Source</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll down</span>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02. Experience</span>
+        <h2 class="section-title">Where I've <span class="gradient-text">worked</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Senior Software Engineer</h3>
+                <span class="company-name">Intuit Inc.</span>
+              </div>
+              <div class="job-meta">
+                <span class="job-date">Jan 2024 — Present</span>
+                <span class="job-type">Full-time</span>
+              </div>
+            </div>
+            <p class="job-desc">
+              Leading WebSocket platform engineering — from infrastructure optimization to SDK ownership —
+              and now spearheading a next-generation platform for WebSocket and Agentic communication.
+            </p>
+            <ul class="job-highlights">
+              <li>Optimized memory on the WebSocket platform through migration, resolving critical gaps in the WebSocket flow</li>
+              <li>Saved ~$160K in infrastructure costs through platform optimization</li>
+              <li>Took technical lead on the JavaScript WebSocket SDK powering real-time chat, notifications, nudges, and mobile push notifications</li>
+              <li>Currently building a unified platform for serving WebSocket and Agentic communication</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Real-time Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Software Development Engineer 2</h3>
+                <span class="company-name">Intuit Inc.</span>
+              </div>
+              <div class="job-meta">
+                <span class="job-date">Sep 2021 — Jan 2024</span>
+                <span class="job-type">Full-time</span>
+              </div>
+            </div>
+            <p class="job-desc">
+              Worked building In Session Customer Engagement capability, contributing to developer tooling and customer-facing
+              communication infrastructure for tax filing workflows.
+            </p>
+            <ul class="job-highlights">
+              <li>Designed and developed an internal playground tool enabling developers to explore and understand the pub/sub event model</li>
+              <li>Built and maintained an API gateway facilitating seamless communication between customers and tax experts during tax filings</li>
+              <li>Gateway handled approximately 1.6M transactions at peak load</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Pub/Sub</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Software Development Engineer</h3>
+                <span class="company-name">Visa Inc.</span>
+              </div>
+              <div class="job-meta">
+                <span class="job-date">Jul 2018 — Sep 2021</span>
+                <span class="job-type">Full-time</span>
+              </div>
+            </div>
+            <p class="job-desc">
+              Worked across multiple high-impact engineering initiatives at Visa, building analytical platforms,
+              automation systems, and data APIs powering visualizations for 1000+ users.
+            </p>
+            <ul class="job-highlights">
+              <li>Designed and developed web-based analytical applications with rich micro-interactions</li>
+              <li>Built a web-based automation system backed by a recommendation engine</li>
+              <li>Built a travel spend history application that calculates user spend patterns</li>
+              <li>Optimized load delivery using a compression algorithm, reducing delivery time by 50%</li>
+              <li>Reduced rendering cycles through memoization and profiling techniques</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Spring Boot</span>
+              <span class="tech-tag">Data Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="job-title">Designer & Developer</h3>
+                <span class="company-name">CEG — Anna University</span>
+              </div>
+              <div class="job-meta">
+                <span class="job-date">2017</span>
+                <span class="job-type">College</span>
+              </div>
+            </div>
+            <p class="job-desc">
+              Designed and developed the official website for ECE CEG symposium, Anna University.
+              Took complete ownership of the product — from visual design to backend infrastructure.
+            </p>
+            <ul class="job-highlights">
+              <li>Built a full CMS to manage event content and updates without developer intervention</li>
+              <li>Implemented a database-backed registration system for participant management</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">HTML/CSS</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03. Projects</span>
+        <h2 class="section-title">Things I've <span class="gradient-text">built</span></h2>
+      </div>
+
+      <div class="projects-card-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-card-top">
+            <span class="proj-tag">Co-Founded · Live</span>
+            <div class="proj-links">
+              <a href="https://www.streamwell.in/" target="_blank" rel="noopener" aria-label="Live Site">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Streamwell</h3>
+          <p class="proj-desc">
+            A fully automated platform for streaming TV channels over the internet via RTMP and HLS.
+            Users just provide a channel name — server provisioning, streaming endpoint setup, and
+            configuration are all handled automatically. Includes a real-time stats dashboard with
+            controls to cap bandwidth and limit concurrent connections.
+          </p>
+          <div class="proj-tech">
+            <span>RTMP</span>
+            <span>Node.js</span>
+            <span>React</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-card-top">
+            <span class="proj-tag">AI Project · Live</span>
+            <div class="proj-links">
+              <a href="https://personalfingenie.netlify.app/" target="_blank" rel="noopener" aria-label="Live Site">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Finance Genie</h3>
+          <p class="proj-desc">
+            An AI-powered personal finance advisor that analyses bank statements to detect income
+            streams and spending patterns. Suggests a personalised asset allocation strategy with
+            clear explanations — like having a financial advisor in your pocket.
+          </p>
+          <div class="proj-tech">
+            <span>AI</span>
+            <span>React</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-card-top">
+            <span class="proj-tag">Open Source · npm</span>
+            <div class="proj-links">
+              <a href="https://www.npmjs.com/package/node-googlesheets-orm" target="_blank" rel="noopener" aria-label="npm">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Node Google Sheets ORM</h3>
+          <p class="proj-desc">
+            A simple and intuitive ORM library for Google Sheets, allowing you to interact with
+            Google Sheets as if they were database tables — with familiar query-style operations
+            for reads, writes, and updates.
+          </p>
+          <div class="proj-tech">
+            <span>Google Sheets API</span>
+            <span>ORM</span>
+            <span>Open Source</span>
+          </div>
+        </div>
+
+        <div class="proj-card reveal">
+          <div class="proj-card-top">
+            <span class="proj-tag">Mobile · 10+ Apps Live</span>
+            <div class="proj-links">
+              <a href="https://play.google.com/store/apps/dev?id=6685575201555005039&hl=en_IN" target="_blank" rel="noopener" aria-label="Play Store">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Streamwell Mobile Apps & App Builder</h3>
+          <p class="proj-desc">
+            Built 10+ white-label mobile apps for Streamwell clients, each featuring live video
+            playback and full playback controls. To scale this, built an app builder platform where
+            clients provide their inputs — branding, content, config — and fully functional iOS and
+            Android apps are generated automatically at runtime, no manual build step required.
+          </p>
+          <div class="proj-tech">
+            <span>Flutter</span>
+            <span>Android</span>
+            <span>App Automation</span>
+          </div>
+        </div>
+
+       
+
+        <div class="proj-card reveal">
+          <div class="proj-card-top">
+            <span class="proj-tag">Mobile · 300 MAU</span>
+            <div class="proj-links">
+              <a href="https://chequeredflag.site" target="_blank" rel="noopener" aria-label="Live Site">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">F1 Strategy Game</h3>
+          <p class="proj-desc">
+            A mobile strategy game for Formula 1 fans. Before each race, players pick their drivers
+            and constructors based on skill and form — then earn points based on real race results.
+            A fun, competitive way to engage with every race weekend, with 300+ monthly active users.
+          </p>
+          <div class="proj-tech">
+            <span>Flutter</span>
+            <span>PostgreSQL</span>
+            <span>Spring Boot</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Trade Secret Section -->
+  <section class="section section-alt" id="trade-secret">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Trade Secret</span>
+        <h2 class="section-title">Awarded <span class="gradient-text">Trade Secret</span></h2>
+      </div>
+      <div class="trade-secret-card reveal">
+        <div class="ts-badge">
+          <span class="ts-icon">🔒</span>
+          <div>
+            <span class="ts-label">Trade Secret</span>
+            <span class="ts-company">Visa Inc.</span>
+          </div>
+        </div>
+        <h3 class="ts-title">JSON-Specific Data Compression Algorithm</h3>
+        <p class="ts-desc">
+          Awarded a Trade Secret at Visa Inc. for a proprietary compression algorithm
+          designed specifically for JSON payloads. The algorithm achieves a compression ratio of
+          <strong>~66.7%</strong> and was benchmarked to be faster than <strong>73.2% of existing
+          compression algorithms</strong> — delivering both superior size reduction and speed for
+          high-throughput data pipelines.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Blog Section -->
+  <section class="section" id="tech-blog">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Tech Blog</span>
+        <h2 class="section-title">Thoughts & <span class="gradient-text">writings</span></h2>
+      </div>
+      <div class="blog-grid">
+        <a href="https://medium.com/@hari_k6/lets-build-a-webpack-from-scratch-1bb8bb5e0ef1" target="_blank" rel="noopener" class="blog-card reveal">
+          <div class="blog-card-top">
+            <span class="blog-tag">Tooling · Medium</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </div>
+          <h3 class="blog-title">Let's Build a Webpack from Scratch</h3>
+          <p class="blog-desc">A deep dive into how module bundlers work under the hood — building one from the ground up to understand dependency graphs, loaders, and the bundling pipeline.</p>
+          <span class="blog-read-more">Read on Medium →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+
+</html>
